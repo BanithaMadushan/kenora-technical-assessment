@@ -1,5 +1,9 @@
+
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
+
+const connectDB = require("./config/db");
 
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
@@ -23,6 +27,31 @@ app.get("/", (req, res) => {
     success: true,
     message: "Workshop Registration Service API",
   });
+});
+
+let connectionPromise = null;
+
+app.use(async (req, res, next) => {
+  try {
+    if (mongoose.connection.readyState !== 1) {
+      if (!connectionPromise) {
+        connectionPromise = connectDB().finally(() => {
+          connectionPromise = null;
+        });
+      }
+
+      await connectionPromise;
+    }
+
+    next();
+  } catch (error) {
+    console.error("Database connection error:", error.message);
+
+    res.status(503).json({
+      success: false,
+      message: "Database connection unavailable",
+    });
+  }
 });
 
 app.use("/api/auth", authRoutes);
