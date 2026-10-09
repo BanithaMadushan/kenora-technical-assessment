@@ -1,0 +1,114 @@
+
+.workshop-list-section {
+  background: #fff;
+  border: 1px solid #e5eaf1;
+  border-radius: 14px;
+  padding: 26px;
+  margin-bottom: 24px;
+}
+
+.workshop-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.workshop-list-heading h2 {
+  font-size: 19px;
+  color: #172b49;
+}
+
+.workshop-list-heading span {
+  font-size: 13px;
+  color: #748197;
+}
+
+.workshop-table-scroll {
+  overflow-x: auto;
+}
+
+.workshop-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 680px;
+}
+
+.workshop-table th {
+  padding: 14px;
+  background: #f5f7fa;
+  color: #65748a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.workshop-table td {
+  padding: 17px 14px;
+  border-bottom: 1px solid #edf0f4;
+  color: #34445a;
+  font-size: 13px;
+}
+
+.workshop-table td strong {
+  color: #172b49;
+  font-size: 13px;
+}
+
+.workshop-table td small {
+  display: block;
+  margin-top: 5px;
+  color: #8390a1;
+  font-size: 11px;
+}
+
+.workshop-status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-scheduled {
+  color: #16754d;
+  background: #e7f7ee;
+}
+
+.status-completed {
+  color: #475569;
+  background: #edf1f5;
+}
+
+.status-cancelled {
+  color: #b33838;
+  background: #fff0f0;
+}
+
+.workshop-table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.workshop-table-actions button {
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #17365e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.workshop-table-actions .workshop-edit-button {
+  background: #eef2f7;
+  color: #17365e;
+}
+
+@media (max-width: 480px) {
+  .workshop-list-section {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,87 @@
+
+.workshop-form-section {
+  background: #ffffff;
+  border: 1px solid #e5eaf1;
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.workshop-form-heading {
+  margin-bottom: 24px;
+}
+
+.workshop-form-heading h2 {
+  color: #172b49;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.workshop-form-heading p {
+  font-size: 13px;
+  color: #748197;
+}
+
+.workshop-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.workshop-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #34445a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.workshop-form-grid input,
+.workshop-form-grid select {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #dce3eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #172b49;
+  font-size: 14px;
+}
+
+.workshop-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.workshop-form-actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  background: #17365e;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.workshop-form-actions .workshop-cancel-button {
+  background: #edf1f6;
+  color: #34445a;
+}
+
+.workshop-form-error {
+  color: #bf3434;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .workshop-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-form-section {
+    padding: 20px;
+  }
+}

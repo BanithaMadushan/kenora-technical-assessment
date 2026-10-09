@@ -1,0 +1,46 @@
+.user-list-section {
+  background: #fff;
+  border: 1px solid #e5eaf1;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.user-list-section h2 {
+  font-size: 20px;
+  color: #172b49;
+  margin-bottom: 20px;
+}
+
+.user-list-scroll {
+  overflow-x: auto;
+}
+
+.user-list-section table {
+  width: 100%;
+  min-width: 450px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.user-list-section th {
+  padding: 14px;
+  background: #f5f7fa;
+  color: #65748a;
+  font-size: 12px;
+}
+
+.user-list-section td {
+  padding: 15px;
+  border-bottom: 1px solid #edf0f4;
+  color: #34445a;
+  font-size: 13px;
+}
+
+.user-role {
+  display: inline-block;
+  padding: 6px 10px;
+  background: #edf2fa;
+  color: #17365e;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
